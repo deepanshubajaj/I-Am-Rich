@@ -2,4 +2,4 @@
 .DS_Store
 
 # Ignore Xcode's xcuserdata files
-*.xcuserdata/
+.xcuserdata/
