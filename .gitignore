@@ -1,0 +1,5 @@
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore Xcode's xcuserdata files
+*.xcuserdata/

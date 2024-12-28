@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_Am_Rich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp4-OM-fq2">
+                                <rect key="frame" x="110" y="142.66666666666666" width="173" height="47"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="I Am Rich">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88235294117647056" green="0.68627450980392157" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="40" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="vuC-c2-vQB">
+                                <rect key="frame" x="25" y="300.33333333333331" width="343.33333333333331" height="251.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251.33333333333331" id="TF3-Fp-BsL"/>
+                                    <constraint firstAttribute="width" constant="343.33333333333331" id="eqE-O7-fSY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wings" translatesAutoresizingMaskIntoConstraints="NO" id="3we-1P-D65">
+                                <rect key="frame" x="17" y="427" width="360" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="jzc-lR-IBt"/>
+                                    <constraint firstAttribute="height" constant="360" id="wHr-Bn-mij"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.45490196078431372" green="0.41176470588235292" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gp4-OM-fq2" secondAttribute="trailing" constant="110" id="6ox-7t-qrQ"/>
+                            <constraint firstItem="Gp4-OM-fq2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="7K8-Wt-p2h"/>
+                            <constraint firstItem="3we-1P-D65" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="368" id="94P-7J-ssE"/>
+                            <constraint firstItem="vuC-c2-vQB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RAG-Rz-4G3"/>
+                            <constraint firstItem="vuC-c2-vQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="asx-iZ-Cvd"/>
+                            <constraint firstItem="3we-1P-D65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="jUS-CO-KJt"/>
+                            <constraint firstItem="Gp4-OM-fq2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83.666666666666629" id="oLh-Ro-BJV"/>
+                            <constraint firstItem="3we-1P-D65" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wV9-gh-QYR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LabelLeadingConstraint" destination="7K8-Wt-p2h" id="Cf6-V6-zbh"/>
+                        <outlet property="LabelTopConstraint" destination="oLh-Ro-BJV" id="6Ht-D3-XTU"/>
+                        <outlet property="LabelTrailingConstraint" destination="6ox-7t-qrQ" id="OVc-4I-uuK"/>
+                        <outlet property="diamondImageHeightConstraint" destination="TF3-Fp-BsL" id="BPk-TF-Y65"/>
+                        <outlet property="diamondImageWidthConstraint" destination="eqE-O7-fSY" id="Kqt-sq-qjJ"/>
+                        <outlet property="wingsImageHeightConstraint" destination="wHr-Bn-mij" id="nfu-Va-Maw"/>
+                        <outlet property="wingsImageLeadingConstraint" destination="jUS-CO-KJt" id="Jh8-fU-gyB"/>
+                        <outlet property="wingsImageTopConstraint" destination="94P-7J-ssE" id="Vtw-Vq-mwZ"/>
+                        <outlet property="wingsImageWidthConstraint" destination="jzc-lR-IBt" id="3iG-S2-uGr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60.305343511450381" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="diamond" width="343.33334350585938" height="251.33332824707031"/>
+        <image name="wings" width="360" height="360"/>
+    </resources>
+</document>
