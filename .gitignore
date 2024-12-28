@@ -3,3 +3,6 @@
 
 # Ignore Xcode's xcuserdata files
 .xcuserdata/
+
+# Ignore other xcuserdata files
+*.xcuserdata
